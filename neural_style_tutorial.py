@@ -337,6 +337,10 @@ def get_style_model_and_losses(cnn, normalization_mean, normalization_std,
 
     model = model[:(i + 1)]
     netprint('New network arch:', model)
+
+    # visualize filters
+    if args.plot_filter:
+        filter_visualization(model)
     return model, style_losses, content_losses
 
 
@@ -559,10 +563,6 @@ if __name__ == "__main__":
     else:
         raise NotImplementedError
     netprint("Original network arch:", cnn) # print network arch for check
-
-    # visualize filters
-    if args.plot_filter:
-        filter_visualization(cnn)
 
     # the main processing func
     run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std,
