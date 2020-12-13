@@ -5,10 +5,10 @@ Log and visualization images are available at [this google drive](https://drive.
 
 
 ## Reproducing our results
-The code is checked on Ubuntu1604 and Mac OS. The following is a step-by-step guidance on **Mac OS**. By our experience, it takes about 10-15 mins to finish the whole pipeline. 
+The code has been checked on Ubuntu1604 and Mac OS. The following is a step-by-step guidance on **Mac OS**. By our experience, it takes about 10-15 mins to finish the whole pipeline. 
 
-1. Download and install [Anaconda for mac](https://docs.anaconda.com/anaconda/install/mac-os/), which is very easy following their guide.
-2. After installing Anaconda, open the Mac terminal, type the following snippet one by one:
+1. Download and install [Anaconda for Mac](https://docs.anaconda.com/anaconda/install/mac-os/), which is very easy following their guide.
+2. After installing Anaconda, open the Mac terminal, type the following snippets one by one:
    1. `sudo conda create --name pt1.7.1 python=3.6 --no-default-packages` // This may need the password since `sudo` is used.
    2. `conda activate pt1.7.1`
    3. `git clone git@github.com:MingSun-Tse/EECE7311_Project_NST.git` // This will download our code.
