@@ -4,7 +4,7 @@
 Log and visualization images are available at [this google drive](https://drive.google.com/file/d/1oJKmuVe2ExwQwCKBUVPBwNt32-aQESbE/view?usp=sharing). Visualization images are put under the `gen_img` folder of each experiment.
 
 
-## Reproducing
+## Reproducing our results
 The code is checked on Ubuntu1604 and Mac OS. The following is a step-by-step guidance to reproduce our course report on **Mac OS**. By our experimence, it takes about 10-15 mins to finish the following pipeline. 
 
 1. Download and install [Anaconda for mac](https://docs.anaconda.com/anaconda/install/mac-os/), which is very easy following their guide.
