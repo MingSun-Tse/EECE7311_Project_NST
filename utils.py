@@ -755,17 +755,17 @@ def visualize_filter(layer, layer_id, save_dir, n_filter_plot=16, n_channel_plot
         fig.savefig(save_path + ext, bbox_inches='tight')
         plt.close(fig)
 
-        for j in channel_ix:
-            f = w[i][j]
-            fig, ax = plt.subplots()
-            im = ax.imshow(f, cmap='jet')
-            # make a beautiful colorbar        
-            divider = make_axes_locatable(ax)
-            cax = divider.append_axes('right', size=0.05, pad=0.05)
-            fig.colorbar(im, cax=cax, orientation='vertical')
-            save_path = '%s/filter_visualize__%s__layer%s__filter%s__channel%s' % (save_dir, prefix, layer_id, i, j)
-            fig.savefig(save_path + ext, bbox_inches='tight')
-            plt.close(fig)
+        # for j in channel_ix:
+        #     f = w[i][j]
+        #     fig, ax = plt.subplots()
+        #     im = ax.imshow(f, cmap='jet')
+        #     # make a beautiful colorbar        
+        #     divider = make_axes_locatable(ax)
+        #     cax = divider.append_axes('right', size=0.05, pad=0.05)
+        #     fig.colorbar(im, cax=cax, orientation='vertical')
+        #     save_path = '%s/filter_visualize__%s__layer%s__filter%s__channel%s' % (save_dir, prefix, layer_id, i, j)
+        #     fig.savefig(save_path + ext, bbox_inches='tight')
+        #     plt.close(fig)
 
 def visualize_feature_map(fm, layer_id, save_dir, n_channel_plot=16, pick_mode='rand', plot_abs=True, prefix='', ext='.pdf'):
     fm = fm.clone().detach()
@@ -791,14 +791,14 @@ def visualize_feature_map(fm, layer_id, save_dir, n_channel_plot=16, pick_mode='
     fig.savefig(save_path + ext, bbox_inches='tight')
     plt.close(fig)
 
-    for j in channel_ix:
-        f = fm[j]
-        fig, ax = plt.subplots()
-        im = ax.imshow(f, cmap='jet')
-        # make a beautiful colorbar        
-        divider = make_axes_locatable(ax)
-        cax = divider.append_axes('right', size=0.05, pad=0.05)
-        fig.colorbar(im, cax=cax, orientation='vertical')
-        save_path = '%s/featmap_visualization__%s__layer%s__channel%s' % (save_dir, prefix, layer_id, j)
-        fig.savefig(save_path + ext, bbox_inches='tight')
-        plt.close(fig)
+    # for j in channel_ix:
+    #     f = fm[j]
+    #     fig, ax = plt.subplots()
+    #     im = ax.imshow(f, cmap='jet')
+    #     # make a beautiful colorbar        
+    #     divider = make_axes_locatable(ax)
+    #     cax = divider.append_axes('right', size=0.05, pad=0.05)
+    #     fig.colorbar(im, cax=cax, orientation='vertical')
+    #     save_path = '%s/featmap_visualization__%s__layer%s__channel%s' % (save_dir, prefix, layer_id, j)
+    #     fig.savefig(save_path + ext, bbox_inches='tight')
+    #     plt.close(fig)
