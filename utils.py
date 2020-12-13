@@ -13,7 +13,6 @@ from collections import OrderedDict
 import glob
 from PIL import Image
 import json, yaml
-import pandas as pd
 
 def _weights_init(m):
     if isinstance(m, nn.Linear) or isinstance(m, nn.Conv2d):
